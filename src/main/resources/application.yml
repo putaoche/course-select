@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/{在application-dev.yml中配置}?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: {在application-dev.yml中配置}
+    password: {在application-dev.yml中配置}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
