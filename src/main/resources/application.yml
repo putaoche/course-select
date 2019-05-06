@@ -3,9 +3,9 @@ spring:
     active: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/{ÔÚapplication-dev.ymlÖĞÅäÖÃ}?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
-    username: {ÔÚapplication-dev.ymlÖĞÅäÖÃ}
-    password: {ÔÚapplication-dev.ymlÖĞÅäÖÃ}
+    url: jdbc:mysql://127.0.0.1:3306/{è¯·åœ¨application-dev.ymlä¸­é…ç½®}?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: {è¯·åœ¨application-dev.ymlä¸­é…ç½®}
+    password: {è¯·åœ¨application-dev.ymlä¸­é…ç½®}
   jpa:
     show-sql: true
     hibernate:
