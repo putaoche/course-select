@@ -1,8 +1,10 @@
 package cn.wzvtcsoft.courseselect.entity;
 
+import cn.wzvtcsoft.base.entity.BaseEntity;
 import cn.wzvtcsoft.common.validation.Add;
 import cn.wzvtcsoft.common.validation.Update;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,16 +18,10 @@ import java.io.Serializable;
  * 班级
  * */
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Entity(name = "tb_class") // 不能用class作为表名，否则MySQL数据库会出错
-public class ClassEntity implements Serializable {
+public class ClassEntity extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    //班级id
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull(groups = Update.class)
-    @Null(groups = Add.class)
-    private Long id;
 
     //班级编号
     private String number;

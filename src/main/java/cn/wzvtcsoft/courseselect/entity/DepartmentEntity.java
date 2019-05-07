@@ -1,8 +1,10 @@
 package cn.wzvtcsoft.courseselect.entity;
 
+import cn.wzvtcsoft.base.entity.BaseEntity;
 import cn.wzvtcsoft.common.validation.Add;
 import cn.wzvtcsoft.common.validation.Update;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,16 +18,10 @@ import java.io.Serializable;
 * 系部
 * */
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Entity(name = "department")
-public class DepartmentEntity implements Serializable {
+public class DepartmentEntity extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    //系部id
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull(groups = Update.class)
-    @Null(groups = Add.class)
-    private Long id;
 
     //系部编号
     private Long number;
