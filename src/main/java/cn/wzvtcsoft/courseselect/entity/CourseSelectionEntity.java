@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /*
  * 选课
@@ -31,13 +32,13 @@ public class CourseSelectionEntity implements Serializable {
     private Long studentId;
 
     //开课id
-    private Long courseStartid;
+    private Long courseStartId;
 
     /*学年学期*/
     private Integer yearSemester;
 
     /*成绩*/
-    private Integer upperLimit;
+    private BigDecimal score;
 
 
 

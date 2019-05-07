@@ -28,7 +28,7 @@ public class CourseStartEntity implements Serializable {
     private Long id;
 
     //课程id
-    private Long CourseId;
+    private Long courseId;
 
     //开课教师id
     private Long teacherId;

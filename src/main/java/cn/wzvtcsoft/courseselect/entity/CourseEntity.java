@@ -33,6 +33,12 @@ public class CourseEntity implements Serializable {
     //课程名称
     private String name;
 
+    //学时
+    private Integer hour;
+
+    //学分
+    private Integer credit;
+
     //课程描述
     private String description;
 

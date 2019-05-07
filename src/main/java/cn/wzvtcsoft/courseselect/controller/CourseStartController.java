@@ -14,7 +14,7 @@ import java.util.List;
  * 开课了
  * */
 @RestController
-@RequestMapping("coursestart")
+@RequestMapping("course/start")
 public class CourseStartController {
 
     @Autowired

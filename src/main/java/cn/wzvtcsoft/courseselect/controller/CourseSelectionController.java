@@ -14,7 +14,7 @@ import java.util.List;
  * 选课
  * */
 @RestController
-@RequestMapping("courseselection")
+@RequestMapping("course/selection")
 public class CourseSelectionController {
 
     @Autowired

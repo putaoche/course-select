@@ -34,14 +34,8 @@ public class TeacherEntity implements Serializable {
     //教师名称
     private String name;
 
-    //教师性别()
-    private boolean gender;
-
-    //教师出生日期()
-    private Date birthDate;
-
-    //教师职业名称
-    private String occupationName;
+    //教师职称
+    private String title;
 
     //所属专业id
     private Long majorId;

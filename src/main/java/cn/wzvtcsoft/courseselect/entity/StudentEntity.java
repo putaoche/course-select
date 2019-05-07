@@ -35,7 +35,7 @@ public class StudentEntity implements Serializable {
     private String name;
 
     //学生性别
-    private boolean gender;
+    private Integer gender;
 
     //学生出生日期
     private Date birthDate;
